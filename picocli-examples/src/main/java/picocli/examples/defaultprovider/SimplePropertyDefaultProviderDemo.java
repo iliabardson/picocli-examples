@@ -15,7 +15,7 @@ import java.util.concurrent.TimeUnit;
 
 @Command(name = "demo", mixinStandardHelpOptions = true, version = "3.9.3",
         description = "Demonstrate parsing & type conversion",
-        defaultValueProvider = PropertyDefaultProvider.class)
+        defaultValueProvider = SimpleDefaultProvider.class)
 public class SimplePropertyDefaultProviderDemo implements Runnable { // ...
 
     @Option(names = "-x", description = "Print count. ${DEFAULT-VALUE} by default.")
